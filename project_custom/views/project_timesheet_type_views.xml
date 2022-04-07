@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- TimeSheet type tree view-->
+        <record id="project_timesheet_type_tree_view" model="ir.ui.view">
+            <field name="name">project.timesheet.type.tree.view</field>
+            <field name="model">project.timesheet.type</field>
+            <field name="arch" type="xml">
+                <tree editable="top">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="project_timesheet_type_form_view" model="ir.ui.view">
+            <field name="name">project.timesheet.type.form.view</field>
+            <field name="model">project.timesheet.type</field>
+            <field name="arch" type="xml">
+                <form string="Timesheet Type">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="project_timesheet_type_action">
+            <field name="name">Timesheet types</field>
+            <field name="views">tree,form</field>
+            <field name="res_model">project.timesheet.type</field>
+        </record>
+
+        <menuitem
+            id="project_timesheet_type_menuitem"
+            name="Timesheet types"
+            sequence="50"
+            parent="project.menu_main_pm"
+            action="project_timesheet_type_action"/>
+
+    </data>
+</odoo>
