@@ -1,0 +1,167 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-06 13:56+0000\n"
+"PO-Revision-Date: 2022-04-06 13:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_custom
+#: model:ir.model,name:project_custom.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea analítica"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_project__business_consultant
+msgid "Business Consultant"
+msgstr "Consultor de Negocio"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__create_uid
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__create_date
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:project_custom.field_project_project__display_name
+#: model:ir.model.fields,field_description:project_custom.field_project_task__display_name
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__display_name
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_project__end_date
+msgid "End Date"
+msgstr "Fecha Final"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_project__functional_consultant
+msgid "Functional Consultant"
+msgstr "Consultor funcional"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__hours_spent
+msgid "Hours Spent"
+msgstr "Horas Dedicadas"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:project_custom.field_project_project__id
+#: model:ir.model.fields,field_description:project_custom.field_project_task__id
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__id
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_project__init_date
+#: model:ir.model.fields,field_description:project_custom.field_project_task__init_date
+msgid "Init Date"
+msgstr "Fecha de inicio"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:project_custom.field_project_project____last_update
+#: model:ir.model.fields,field_description:project_custom.field_project_task____last_update
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type____last_update
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__write_uid
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__write_date
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_task__progress_manual
+msgid "Progress manual"
+msgstr "Progreso manual"
+
+#. module: project_custom
+#: model:ir.model,name:project_custom.model_project_project
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__project_id
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project_custom
+#: model:ir.model,name:project_custom.model_project_timesheet_type
+msgid "Project Timesheet types"
+msgstr "Parte de horas por tipo"
+
+#. module: project_custom
+#: model:ir.model,name:project_custom.model_project_timesheet_type_line
+msgid "Project Timesheet types lines"
+msgstr "Lineas Parte de horas por tipo"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_project__responsible_customer
+msgid "Responsible Customer"
+msgstr "Responsable Cliente"
+
+#. module: project_custom
+#: model:ir.model,name:project_custom.model_project_task
+msgid "Task"
+msgstr "Tarea"
+
+#. module: project_custom
+#: model_terms:ir.ui.view,arch_db:project_custom.project_project_detail_timesheet
+#: model_terms:ir.ui.view,arch_db:project_custom.project_timesheet_type_form_view
+msgid "Timesheet Type"
+msgstr "Tipo"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_project__type_lines_ids
+msgid "Timesheet Type lines"
+msgstr "Líneas de tipo de parte de horas"
+
+#. module: project_custom
+#: model_terms:ir.ui.view,arch_db:project_custom.project_project_detail_timesheet
+msgid "Timesheet type lines"
+msgstr "Tiempo por tipo de Área"
+
+#. module: project_custom
+#: model:ir.actions.act_window,name:project_custom.project_timesheet_type_action
+#: model:ir.ui.menu,name:project_custom.project_timesheet_type_menuitem
+msgid "Timesheet types"
+msgstr "Áreas del parte de horas"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__total_hours
+msgid "Total Hours"
+msgstr "Horas totales"
+
+#. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__timesheet_type
+#: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__timesheet_type
+msgid "Type"
+msgstr "Tipo"
