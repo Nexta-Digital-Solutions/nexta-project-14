@@ -21,6 +21,7 @@ Detailed project timesheet.
         'views/project_project_views.xml',
         'views/project_task_views.xml',
         'views/project_timesheet_type_views.xml',
+        'views/project_timesheet_type_line.xml',
     ],
     'installable': True,
     'website': '',

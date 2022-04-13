@@ -27,8 +27,17 @@
                 <xpath expr="//field[@name='timesheet_ids']//tree//field[@name='employee_id']" position="after">
                     <field name="timesheet_type"/>
                 </xpath>
+            </field>
+        </record>
 
-
+        <record id="project_task_progress_tree_view" model="ir.ui.view">
+            <field name="name">project.project.progress.tree.view</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="hr_timesheet.view_task_tree2_inherited"/>
+            <field name="arch" type="xml">
+                <field name="progress" position="before">
+                    <field name="progress_manual"/>
+                </field>
             </field>
         </record>
     </data>
