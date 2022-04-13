@@ -68,7 +68,7 @@
 
         <menuitem
             id="project_timesheet_type_line_menuitem"
-            name="Timesheet types"
+            name="Timesheet types Lines"
             sequence="70"
             parent="project.menu_main_pm"
             action="project_timesheet_type_line_action"/>

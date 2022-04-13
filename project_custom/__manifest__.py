@@ -2,7 +2,7 @@
 
 {
     'name': 'Detailed Project Timesheet',
-    'version': '1.1',
+    'version': '1.2',
     'category': 'Project',
     'sequence': 6,
     'author' : 'NextaDS',
@@ -22,6 +22,7 @@ Detailed project timesheet.
         'views/project_task_views.xml',
         'views/project_timesheet_type_views.xml',
         'views/project_timesheet_type_line.xml',
+        'data/project_timesheet_type_data.xml',
     ],
     'installable': True,
     'website': '',
