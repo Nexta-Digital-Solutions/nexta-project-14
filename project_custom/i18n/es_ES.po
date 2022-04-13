@@ -104,8 +104,8 @@ msgstr "Nombre"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_task__progress_manual
-msgid "Progress manual"
-msgstr "Progreso manual"
+msgid "Progress real"
+msgstr "Progreso real"
 
 #. module: project_custom
 #: model:ir.model,name:project_custom.model_project_project

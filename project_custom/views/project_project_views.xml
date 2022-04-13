@@ -31,6 +31,8 @@
                                 <field name="project_id" invisible="1"/>
                                 <field name="timesheet_type"/>
                                 <field name="total_hours"/>
+                                <field name="remaining_hours"/>
+                                <field name="spend_percentage" />
                                 <field name="hours_spent"/>
                             </tree>
                             <form string="Timesheet Type">
@@ -42,6 +44,11 @@
                                         </group>
                                         <group>
                                             <field name="total_hours"/>
+                                            <field name="remaining_hours"/>
+                                            <label for="spend_percentage"/>
+                                            <div class="o_row">
+                                                <field name="spend_percentage"/><span>%%</span>
+                                            </div>
                                             <field name="hours_spent"/>
                                         </group>
                                     </group>
