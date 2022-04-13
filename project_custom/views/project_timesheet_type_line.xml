@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- TimeSheet type tree view-->
+        <record id="project_timesheet_type_line_tree_view" model="ir.ui.view">
+            <field name="name">project.timesheet.type.line.tree.view</field>
+            <field name="model">project.timesheet.type.line</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="project_id"/>
+                    <field name="timesheet_type"/>
+                    <field name="total_hours"/>
+                    <field name="remaining_hours"/>
+                    <field name="spend_percentage"/>
+                    <field name="hours_spent"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="project_timesheet_type_line_form_view" model="ir.ui.view">
+            <field name="name">project.timesheet.type.line.form.view</field>
+            <field name="model">project.timesheet.type.line</field>
+            <field name="arch" type="xml">
+                <form string="Timesheet Type">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="project_id" invisible="1"/>
+                                <field name="timesheet_type"/>
+                            </group>
+                            <group>
+                                <field name="total_hours"/>
+                                <field name="remaining_hours"/>
+                                <label for="spend_percentage"/>
+                                <div class="o_row">
+                                    <field name="spend_percentage"/><span>%%</span>
+                                </div>
+                                <field name="hours_spent"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- SEARCH view -->
+        <record id="project_timesheet_type_line_search_view" model="ir.ui.view">
+            <field name="name">project.timesheet.type.line.search.view</field>
+            <field name="model">project.timesheet.type.line</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="project_id"/>
+                    <field name="timesheet_type"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Project" name="project" context="{'group_by': 'project_id'}"/>
+                        <filter string="Type" name="timesheet_type" context="{'group_by': 'timesheet_type'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="project_timesheet_type_line_action">
+            <field name="name">Timesheet types Lines</field>
+            <field name="views">tree,form</field>
+            <field name="res_model">project.timesheet.type.line</field>
+            <field name="search_view_id" ref="project_timesheet_type_line_search_view"/>
+        </record>
+
+        <menuitem
+            id="project_timesheet_type_line_menuitem"
+            name="Timesheet types"
+            sequence="70"
+            parent="project.menu_main_pm"
+            action="project_timesheet_type_line_action"/>
+
+    </data>
+</odoo>
