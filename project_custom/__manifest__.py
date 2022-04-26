@@ -2,7 +2,7 @@
 
 {
     'name': 'Detailed Project Timesheet',
-    'version': '1.2',
+    'version': '1.3',
     'category': 'Project',
     'sequence': 6,
     'author' : 'NextaDS',

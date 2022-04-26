@@ -8,11 +8,11 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="project_id"/>
-                    <field name="timesheet_type"/>
-                    <field name="total_hours"/>
-                    <field name="remaining_hours"/>
+                    <field name="timesheet_type" />
+                    <field name="total_hours" widget="float_time"/>
+                    <field name="remaining_hours" widget="float_time"/>
                     <field name="spend_percentage"/>
-                    <field name="hours_spent"/>
+                    <field name="hours_spent" widget="float_time"/>
                 </tree>
             </field>
         </record>
@@ -25,17 +25,17 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="project_id" invisible="1"/>
+                                <field name="project_id"/>
                                 <field name="timesheet_type"/>
                             </group>
                             <group>
-                                <field name="total_hours"/>
-                                <field name="remaining_hours"/>
-                                <label for="spend_percentage"/>
+                                <field name="total_hours" widget="float_time"/>
+                                <field name="remaining_hours" widget="float_time"/>
+                                <label for="spend_percentage" widget="float_time"/>
                                 <div class="o_row">
                                     <field name="spend_percentage"/><span>%%</span>
                                 </div>
-                                <field name="hours_spent"/>
+                                <field name="hours_spent" widget="float_time"/>
                             </group>
                         </group>
                     </sheet>
