@@ -7,12 +7,15 @@
             <field name="model">project.timesheet.type.line</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="name" invisible="1"/>
                     <field name="project_id"/>
                     <field name="timesheet_type" />
                     <field name="total_hours" widget="float_time"/>
                     <field name="remaining_hours" widget="float_time"/>
                     <field name="spend_percentage"/>
                     <field name="hours_spent" widget="float_time"/>
+                    <field name="project_init_date" />
+                    <field name="project_end_date" />
                 </tree>
             </field>
         </record>
@@ -25,8 +28,11 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="project_id"/>
+                                <field name="name" invisible="1"/>
                                 <field name="timesheet_type"/>
+                                <field name="project_id"/>
+                                <field name="project_init_date" />
+                                <field name="project_end_date" />
                             </group>
                             <group>
                                 <field name="total_hours" widget="float_time"/>
