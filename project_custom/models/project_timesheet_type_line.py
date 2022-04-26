@@ -20,11 +20,12 @@ class ProjectTimesheetTypeLine(models.Model):
             timesheet_line_ids = line.project_id.task_ids.mapped('timesheet_ids')
             total = 0.0
             remaining = 0.0
+            spend_percentage = 0.0
             if bool(timesheet_line_ids):
-                type_lines = timesheet_line_ids.filtered(lambda x: x.timesheet_type.id == line.timesheet_type.id)
+                type_lines = timesheet_line_ids.filtered(lambda x: line.timesheet_type and x.timesheet_type.id == line.timesheet_type.id)
                 total  = sum(type_lines.mapped('unit_amount'))
                 remaining = line.total_hours - total
-                spend_percentage = (total*100)/line.total_hours
+                spend_percentage = (total*100)/line.total_hours if line.total_hours else 0
             line.update({
                 'hours_spent':total,
                 'remaining_hours':remaining,
