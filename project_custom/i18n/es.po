@@ -148,7 +148,7 @@ msgstr "Horas restantes"
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__spend_percentage
 msgid "Remaining percent"
-msgstr "Porcentaje realizao"
+msgstr "Porcentaje Restante"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_project__responsible_customer
