@@ -6,4 +6,4 @@ class ProjectTimeseetType(models.Model):
     _name = "project.timesheet.type"
     _description = "Project Timesheet types"
 
-    name = fields.Char(string="Name", required=True)
+    name = fields.Char(string="Name", required=False)
