@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-26 15:12+0000\n"
-"PO-Revision-Date: 2022-04-26 15:12+0000\n"
+"POT-Creation-Date: 2023-04-14 11:02+0000\n"
+"PO-Revision-Date: 2023-04-14 11:02+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,14 +16,19 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__progress
+msgid "% Progress"
+msgstr "% Progreso"
+
+#. module: project_custom
 #: model:ir.model,name:project_custom.model_account_analytic_line
 msgid "Analytic Line"
-msgstr "Línea analítica"
+msgstr "Línea Analítica"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_project__business_consultant
 msgid "Business Consultant"
-msgstr "Consultor de negocios"
+msgstr "Consultor de Negocio"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__create_uid
@@ -49,7 +54,7 @@ msgstr "Nombre mostrado"
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_project__end_date
 msgid "End Date"
-msgstr "Fecha fin"
+msgstr "Fecha Final"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_project__functional_consultant
@@ -64,7 +69,7 @@ msgstr "Agrupar por"
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__hours_spent
 msgid "Hours Spent"
-msgstr "Horas invertidas"
+msgstr "Horas Dedicadas"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__id
@@ -111,7 +116,7 @@ msgstr "Nombre"
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_task__progress_manual
 msgid "Progress manual"
-msgstr "Progreso Real"
+msgstr "Progreso manual"
 
 #. module: project_custom
 #: model:ir.model,name:project_custom.model_project_project
@@ -133,12 +138,12 @@ msgstr "Fecha Inicio Proyecto"
 #. module: project_custom
 #: model:ir.model,name:project_custom.model_project_timesheet_type
 msgid "Project Timesheet types"
-msgstr "Tipos de parte de horas del proyecto"
+msgstr "Parte de horas por tipo"
 
 #. module: project_custom
 #: model:ir.model,name:project_custom.model_project_timesheet_type_line
 msgid "Project Timesheet types lines"
-msgstr "Líneas de tipos de parte de horas del proyecto"
+msgstr "Lineas Parte de horas por tipo"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__remaining_hours
@@ -161,11 +166,17 @@ msgid "Task"
 msgstr "Tarea"
 
 #. module: project_custom
+#: code:addons/project_custom/models/project_task.py:0
+#, python-format
+msgid "The sum of all progress lines cannot be greater than 100%"
+msgstr "La suma de todos los porcentajes no puede superar el 100%"
+
+#. module: project_custom
 #: model_terms:ir.ui.view,arch_db:project_custom.project_project_detail_timesheet
 #: model_terms:ir.ui.view,arch_db:project_custom.project_timesheet_type_form_view
 #: model_terms:ir.ui.view,arch_db:project_custom.project_timesheet_type_line_form_view
 msgid "Timesheet Type"
-msgstr "Tipo de parte de horas"
+msgstr "Tipo"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_project__type_lines_ids
@@ -175,13 +186,13 @@ msgstr "Líneas de tipo de parte de horas"
 #. module: project_custom
 #: model_terms:ir.ui.view,arch_db:project_custom.project_project_detail_timesheet
 msgid "Timesheet type lines"
-msgstr "Líneas de tipo de parte de horas"
+msgstr "Tiempo por tipo de Área"
 
 #. module: project_custom
 #: model:ir.actions.act_window,name:project_custom.project_timesheet_type_action
 #: model:ir.ui.menu,name:project_custom.project_timesheet_type_menuitem
 msgid "Timesheet types"
-msgstr "Tipos parte de horas"
+msgstr "Áreas del parte de horas"
 
 #. module: project_custom
 #: model:ir.actions.act_window,name:project_custom.project_timesheet_type_line_action
