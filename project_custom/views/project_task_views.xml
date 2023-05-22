@@ -41,6 +41,10 @@
                 <field name="progress" position="before">
                     <field name="progress_manual"/>
                 </field>
+                <field name="company_id" position="after">
+                    <field name="milestone_id"/>
+                    <field name="planned_hours"/>
+                </field>
             </field>
         </record>
     </data>
