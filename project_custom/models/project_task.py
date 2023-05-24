@@ -12,7 +12,7 @@ class ProjectTask(models.Model):
     @api.depends('timesheet_ids')
     def compute_progres_manual(self):
         for task in self:
-            if sum(task.timesheet_ids.mapped('progress')) > 1:
+            if sum(task.timesheet_ids.mapped('progress')) > 100:
                 raise UserError(_('The sum of all progress lines cannot be greater than 100%'))
             task.update({
                 'progress_manual': sum(task.timesheet_ids.mapped('progress'))
