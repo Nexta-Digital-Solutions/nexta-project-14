@@ -9,7 +9,7 @@
             <field name="arch" type="xml">
                 <field name="task_id" position="after">
                     <field name="milestone_id"/>
-                    <field name="progress_manual" widget="percentage"/>
+                    <field name="progress_manual"/>
                     <field name="planned_hours" widget="timesheet_uom" sum="Total" readonly="1"/>
                 </field>
             </field>
