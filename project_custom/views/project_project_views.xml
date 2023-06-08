@@ -59,5 +59,17 @@
                 </xpath>
             </field>
         </record>
+
+        <record id="project_enhancement_milestone_view_inherit_form" model="ir.ui.view">
+            <field name="name">project.project.detail.timesheet</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project_milestone.project_enhancement_milestone_view_inherit_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='milestone_ids']//tree//field[@name='progress']" position="after">
+                    <field name="total_hours"/>
+                    <field name="progress_manual"/>
+                </xpath>
+            </field>
+        </record>
     </data>
 </odoo>
