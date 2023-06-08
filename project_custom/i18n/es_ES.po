@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-22 14:53+0000\n"
-"PO-Revision-Date: 2023-05-22 14:53+0000\n"
+"POT-Creation-Date: 2023-06-08 09:41+0000\n"
+"PO-Revision-Date: 2023-06-08 09:41+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -44,6 +44,7 @@ msgstr "Creado en"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:project_custom.field_project_milestone__display_name
 #: model:ir.model.fields,field_description:project_custom.field_project_project__display_name
 #: model:ir.model.fields,field_description:project_custom.field_project_task__display_name
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__display_name
@@ -73,12 +74,13 @@ msgstr "Horas Dedicadas"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:project_custom.field_project_milestone__id
 #: model:ir.model.fields,field_description:project_custom.field_project_project__id
 #: model:ir.model.fields,field_description:project_custom.field_project_task__id
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type__id
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__id
 msgid "ID"
-msgstr "Identificación"
+msgstr "Identificador"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_project_project__init_date
@@ -88,6 +90,7 @@ msgstr "Fecha de inicio"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:project_custom.field_project_milestone____last_update
 #: model:ir.model.fields,field_description:project_custom.field_project_project____last_update
 #: model:ir.model.fields,field_description:project_custom.field_project_task____last_update
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type____last_update
@@ -126,6 +129,7 @@ msgstr "Horas planeadas"
 
 #. module: project_custom
 #: model:ir.model.fields,field_description:project_custom.field_account_analytic_line__progress_manual
+#: model:ir.model.fields,field_description:project_custom.field_project_milestone__progress_manual
 #: model:ir.model.fields,field_description:project_custom.field_project_task__progress_manual
 msgid "Progress manual"
 msgstr "Progreso manual"
@@ -146,6 +150,11 @@ msgstr "Fecha Fin Proyecto"
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__project_init_date
 msgid "Project Init Date"
 msgstr "Fecha Inicio Proyecto"
+
+#. module: project_custom
+#: model:ir.model,name:project_custom.model_project_milestone
+msgid "Project Milestone"
+msgstr "Hito del proyecto"
 
 #. module: project_custom
 #: model:ir.model,name:project_custom.model_project_timesheet_type
@@ -223,6 +232,7 @@ msgid "Total"
 msgstr ""
 
 #. module: project_custom
+#: model:ir.model.fields,field_description:project_custom.field_project_milestone__total_hours
 #: model:ir.model.fields,field_description:project_custom.field_project_timesheet_type_line__total_hours
 msgid "Total Hours"
 msgstr "Horas totales"
