@@ -5,3 +5,4 @@ from . import project_task
 from . import project_timesheet_type
 from . import account_analytic_line
 from . import project_timesheet_type_line
+from . import project_milestone
