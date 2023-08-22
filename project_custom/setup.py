@@ -1,3 +1,7 @@
+
+import subprocess
+from os import sys, system
+
 class Packages:
     """
     This Class installs required Packages or library
@@ -12,4 +16,6 @@ class Packages:
             pass
         else:
             print('installing package %s' % packg)
-            os.system('pip3 install ' + packg)
+            system('pip3 install ' + packg)
+
+
