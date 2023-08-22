@@ -28,7 +28,4 @@ Detailed project timesheet.
     'installable': True,
     'website': '',
     'auto_install': False,
-    'external_dependencies': {
-        'python': ['openupgradelib'],
-    },
 }
