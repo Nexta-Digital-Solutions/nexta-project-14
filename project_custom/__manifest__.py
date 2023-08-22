@@ -15,15 +15,15 @@
 Detailed project timesheet.
 
 """,
-    'depends': ['project','timesheet_grid','hr_timesheet','project_milestone'],
+    'depends': ['project','timesheet_grid','hr_timesheet'],
     'data': [
         'security/ir.model.access.csv',
-        'views/project_project_views.xml',
-        'views/project_task_views.xml',
-        'views/project_timesheet_type_views.xml',
-        'views/project_timesheet_type_line.xml',
-        'views/account_analityc_line_views.xml',
-        'data/project_timesheet_type_data.xml',
+        #'views/project_project_views.xml',
+        #'views/project_task_views.xml',
+        #'views/project_timesheet_type_views.xml',
+        #'views/project_timesheet_type_line.xml',
+        #'views/account_analityc_line_views.xml',
+        #'data/project_timesheet_type_data.xml',
     ],
     'installable': True,
     'website': '',
