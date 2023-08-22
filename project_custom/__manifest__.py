@@ -2,7 +2,7 @@
 
 {
     'name': 'Detailed Project Timesheet',
-    'version': '1.3',
+    'version': '1.4',
     'category': 'Project',
     'sequence': 6,
     'author' : 'NextaDS',
@@ -28,4 +28,7 @@ Detailed project timesheet.
     'installable': True,
     'website': '',
     'auto_install': False,
+    'external_dependencies': {
+        'python': ['openupgradelib'],
+    },
 }
